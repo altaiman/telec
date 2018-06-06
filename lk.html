@@ -23,6 +23,9 @@
   			</defs>
   			<g><g transform="translate(-1445 -3697)"><g><g><use xlink:href="#tip2a"/></g><g><use xlink:href="#tip2b"/></g><g><use xlink:href="#tip2c"/></g><g><use xlink:href="#tip2d"/></g><g><use xlink:href="#tip2e"/></g><g><use xlink:href="#tip2f"/></g><g><use xlink:href="#tip2g"/></g><g><use xlink:href="#tip2h"/></g><g><use xlink:href="#tip2i"/></g><g><use xlink:href="#tip2j"/></g></g></g></g>
   		</symbol>
+  		<symbol id="edit" viewBox="0 0 12 12">
+			<defs><path id="cvl9a" d="M892 591l3.13-.86-2.27-2.27zm10.49-11.77a.76.76 0 0 0-.6-.23.9.9 0 0 0-.6.28l-1.21 1.2 2.43 2.44 1.2-1.2a.9.9 0 0 0 .29-.62.76.76 0 0 0-.23-.59zm-2.7 1.58l-6.72 6.69 2.43 2.43 6.7-6.72z"/></defs><g><g transform="translate(-892 -579)"><use xlink:href="#cvl9a"/></g></g>
+  		</symbol>
 	</svg>
 
 	<header class="header">
@@ -86,25 +89,90 @@
 				<li><a href="#">Главная</a></li>
 				<li><a href="#">Личный кабинет</a></li>
 			</ul>
-			
+
 			<section class="lk">
 				<div class="container">
-					<aside class="lk__side">
-						<nav class="lk__nav">
-							<a href="#">Личные данные</a>
-							<a href="#">Бонусные баллы</a>
-							<a href="#">Мои заказы</a>
-							<a href="#">Запросы о поступлении</a>
-							<a href="#">Резервы</a>
-						</nav>
-					</aside>
-
-					<div class="lk__main">
-							
+					<div class="lk__page">
+						<aside class="lk__side">
+							<nav class="lk__nav">
+								<a class="active" href="#">Личные данные</a>
+								<a href="#">Бонусные баллы</a>
+								<a href="#">Мои заказы</a>
+								<a href="#">Запросы о поступлении</a>
+								<a href="#">Резервы</a>
+							</nav>
+						</aside>
+						<div class="lk__main">
+							<div class="lk__content">
+								<form class="form form_lk">
+									<div class="field field_disable">
+										<input type="text" placeholder="Иван">
+										<div class="field__options">
+											<button class="field__edit">
+												<svg>
+													<use xlink:href="#edit"/>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="field field_disable">
+										<input type="text" placeholder="Иванов">
+										<div class="field__options">
+											<button class="field__edit">
+												<svg>
+													<use xlink:href="#edit"/>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="field field_disable">
+										<input type="text" placeholder="Иванович">
+										<div class="field__options">
+											<button class="field__edit">
+												<svg>
+													<use xlink:href="#edit"/>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="field field_disable">
+										<input type="text" placeholder="pochta@gmail.com">
+										<div class="field__options">
+											<button class="field__edit">
+												<svg>
+													<use xlink:href="#edit"/>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="field field_disable">
+										<input type="text" placeholder="+7 923 023 23 23">
+										<div class="field__options">
+											<button class="field__edit">
+												<svg>
+													<use xlink:href="#edit"/>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="field field_disable">
+										<input type="password" placeholder="•••••••••">
+										<div class="field__options">
+											<button class="field__show field__show_active"></button>
+											<button class="field__edit">
+												<svg>
+													<use xlink:href="#edit"/>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<button class="btn btn_form">Сохранить</button>
+								</form>
+							</div>
+						</div>
 					</div>
 				</div>
-			</section>
-	
+			</section>	
 			
 		</div>
 
@@ -175,13 +243,13 @@
 				<span class="footer__block-caption">Подписаться на рассылку</span>
 				<div class="subscribe">
 					<p>Узнавайте о скидках первыми!</p>
-					<div class="subscribe__field field">
+					<div class="field subscribe__field">
 						<input type="mail" placeholder="E-mail">
 						<button class="field__btn">Ок</button>
 					</div>
 					<label class="aggree">
-						<span class="checkbox">
-							<input type="checkbox">
+						<span class="checkbox checkbox_sub">
+							<input class="checkbox" type="checkbox">
 							<span class="checkbox__box"></span>
 						</span>
 						<p>Принимаю условия Согласия на обработку персональных данных
