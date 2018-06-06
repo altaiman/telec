@@ -83,96 +83,113 @@
 
 	<div class="page__wrapper">
 		<div class="container">
-			<h2 class="title title_page title_center">Личный кабинет</h2>
+			<h2 class="title title_page title_center">Корзина</h2>
 
 			<ul class="breadcrumbs">
 				<li><a href="#">Главная</a></li>
-				<li><a href="#">Личный кабинет</a></li>
+				<li><a href="#">Корзина</a></li>
 			</ul>
 
-			<section class="lk">
+			<section class="basket">
 				<div class="container">
-					<div class="lk__page">
-						<aside class="lk__side">
-							<nav class="lk__nav">
-								<a class="active" href="#">Личные данные</a>
-								<a href="#">Бонусные баллы</a>
-								<a href="#">Мои заказы</a>
-								<a href="#">Запросы о поступлении</a>
-								<a href="#">Резервы</a>
-							</nav>
-						</aside>
-						<div class="lk__main">
-							<div class="lk__content">
-								<form class="form form_lk">
-									<div class="field field_disable">
-										<input type="text" placeholder="Иван">
-										<div class="field__options">
-											<button class="field__edit">
-												<svg>
-													<use xlink:href="#edit"/>
-												</svg>
-											</button>
-										</div>
-									</div>
-									<div class="field field_disable">
-										<input type="text" placeholder="Иванов">
-										<div class="field__options">
-											<button class="field__edit">
-												<svg>
-													<use xlink:href="#edit"/>
-												</svg>
-											</button>
-										</div>
-									</div>
-									<div class="field field_disable">
-										<input type="text" placeholder="Иванович">
-										<div class="field__options">
-											<button class="field__edit">
-												<svg>
-													<use xlink:href="#edit"/>
-												</svg>
-											</button>
-										</div>
-									</div>
-									<div class="field field_disable">
-										<input type="text" placeholder="pochta@gmail.com">
-										<div class="field__options">
-											<button class="field__edit">
-												<svg>
-													<use xlink:href="#edit"/>
-												</svg>
-											</button>
-										</div>
-									</div>
-									<div class="field field_disable">
-										<input type="text" placeholder="+7 923 023 23 23">
-										<div class="field__options">
-											<button class="field__edit">
-												<svg>
-													<use xlink:href="#edit"/>
-												</svg>
-											</button>
-										</div>
-									</div>
-									<div class="field field_disable">
-										<input type="password" placeholder="•••••••••">
-										<div class="field__options">
-											<button class="field__show field__show_active"></button>
-											<button class="field__edit">
-												<svg>
-													<use xlink:href="#edit"/>
-												</svg>
-											</button>
-										</div>
-									</div>
-									<button class="btn btn_form">Сохранить</button>
-								</form>
+					<ul class="basket__items">
+						<li class="b-item">
+							<div class="b-item__cell b-item__pic">
+								<img src="pictures/d31f0caa4064efcb76525d6bdf12398b.jpg" alt="">
 							</div>
-						</div>
+							<div class="b-item__cell">
+								<p>Золотое кольцо с леопардовым агатом</p>
+								<span class="b-item__alt">Артикул к170-517АГЛ</span>
+							</div>
+							<div class="b-item__cell">
+								<span class="b-item__alt">Материал и вставка</span>
+								<p>Золото 585, Агат</p>
+							</div>
+							<div class="b-item__cell">
+								<span class="b-item__alt">Размер</span>
+								<p>16.5</p>
+							</div>
+							<div class="b-item__cell">
+								<div class="counter">
+									<button class="counter__btn counter__btn_minus"></button>
+									<input type="number" value="1" data-max="6">
+									<button class="counter__btn counter__btn_plus"></button>
+								</div>
+							</div>
+							<div class="b-item__cell">
+								<span class="b-item__alt">Цена</span>
+								<span class="price">8 999 <span>р.</span></span>
+							</div>
+							<button class="b-item__remove"></button>
+						</li>
+						<li class="b-item">
+							<div class="b-item__cell b-item__pic">
+								<img src="pictures/d31f0caa4064efcb76525d6bdf12398b.jpg" alt="">
+							</div>
+							<div class="b-item__cell">
+								<p>Золотое кольцо с леопардовым агатом</p>
+								<span class="b-item__alt">Артикул к170-517АГЛ</span>
+							</div>
+							<div class="b-item__cell">
+								<span class="b-item__alt">Материал и вставка</span>
+								<p>Золото 585, Агат</p>
+							</div>
+							<div class="b-item__cell">
+								<span class="b-item__alt">Размер</span>
+								<p>16.5</p>
+							</div>
+							<div class="b-item__cell">
+								<div class="counter">
+									<button class="counter__btn counter__btn_minus"></button>
+									<input type="number" value="1" data-max="6">
+									<button class="counter__btn counter__btn_plus"></button>
+								</div>
+							</div>
+							<div class="b-item__cell">
+								<span class="b-item__alt">Цена</span>
+								<span class="price">8 999 <span>р.</span></span>
+							</div>
+							<button class="b-item__remove"></button>
+						</li>
+						<li class="b-item">
+							<div class="b-item__cell b-item__pic">
+								<img src="pictures/d31f0caa4064efcb76525d6bdf12398b.jpg" alt="">
+							</div>
+							<div class="b-item__cell">
+								<p>Золотое кольцо с леопардовым агатом</p>
+								<span class="b-item__alt">Артикул к170-517АГЛ</span>
+							</div>
+							<div class="b-item__cell">
+								<span class="b-item__alt">Материал и вставка</span>
+								<p>Золото 585, Агат</p>
+							</div>
+							<div class="b-item__cell">
+								<span class="b-item__alt">Размер</span>
+								<p>16.5</p>
+							</div>
+							<div class="b-item__cell">
+								<div class="counter">
+									<button class="counter__btn counter__btn_minus"></button>
+									<input type="number" value="1" data-max="6">
+									<button class="counter__btn counter__btn_plus"></button>
+								</div>
+							</div>
+							<div class="b-item__cell">
+								<span class="b-item__alt">Цена</span>
+								<span class="price">8 999 <span>р.</span></span>
+							</div>
+							<button class="b-item__remove"></button>
+						</li>
+					</ul>
+
+					<div class="basket__sum">
+						<span class="basket__sum-text">Итого</span>
+						<span class="price price_sum">33 299 <span>р.</span></span>
+						<button class="btn">Оформить заказ</button>
 					</div>
 				</div>
-			</section>	
+			</section>
+
 			
 		</div>
 
